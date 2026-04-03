@@ -11,7 +11,9 @@ rosdep install --from-path tesollo_dg_3f_gripper --ignore-src -r -y
 ## Build
 ```bash
 cd <path_to_ws>
-colcon build --symlink-install --packages-select tesollo_dg_3f_gripper && . install/setup.bash
+colcon build --symlink-install --packages-select \
+    tesollo_dg_3f_gripper \
+    && . install/setup.bash
 ```
 
 ## Execute
