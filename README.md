@@ -18,10 +18,15 @@ colcon build --symlink-install --packages-select \
     && . install/setup.bash
 ```
 
+## View robot
+```bash
+ros2 launch delto_3f_description view_gripper.launch.py
+```
+
 ## Execute
 ```bash
 ros2 launch delto_3f_description upload_gripper.launch.py
-rros2 run delto_3f_driver main_node --ros-args -p port_name:=/dev/ttyUSB0 -r joint_states:=gripper_joint_states
+ros2 run delto_3f_driver main_node --ros-args -p port_name:=/dev/ttyUSB0 -r joint_states:=gripper_joint_states
 ```
 
 ## Usage
