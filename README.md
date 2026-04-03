@@ -12,7 +12,9 @@ rosdep install --from-path tesollo_dg_3f_gripper --ignore-src -r -y
 ```bash
 cd <path_to_ws>
 colcon build --symlink-install --packages-select \
-    tesollo_dg_3f_gripper \
+    delto_3f_description \
+    delto_3f_driver \
+    delto_3f_interfaces \
     && . install/setup.bash
 ```
 
