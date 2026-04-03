@@ -14,7 +14,6 @@ cd <path_to_ws>
 colcon build --symlink-install --packages-select tesollo_dg_3f_gripper && . install/setup.bash
 ```
 
-
 ## Execute
 ```bash
 ros2 launch delto_3f_description upload_gripper.launch.py
